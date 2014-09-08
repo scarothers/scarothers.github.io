@@ -24,7 +24,7 @@ body {
 p {
     font-size: 14px; 
 
-    line-height: 1.75;
+    line-height: 1.5;
 }
 
 p.large {
@@ -37,17 +37,22 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
+    color: #E0D627;
 }
 
 a {
     color: #E0D627;
 }
 
-a:hover,
+a:hover {
+    text-decoration: none;
+}
 a:focus,
 a:active,
-a.active {
-    color: #E0D627;
+a.active,
+.a-white {
+
+    color: #fff;
 }
 
 h1,
@@ -59,6 +64,7 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    padding: 10px 10px;  
     /* color: #FE5D63; */
 }
 
@@ -81,6 +87,7 @@ h6 {
     font-weight: 700;
     color: #fff;
     background-color: #E0D627;
+    margin-top: 10px;
 }
 
 .btn-primary:hover,
@@ -124,15 +131,16 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
-    border-color: #E0D627;
-    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-color: #FE5D63;
+    border-radius: 5px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #E0D627;
+    background-color: #FE5D63;
 }
 
 .btn-xl:hover,
@@ -140,9 +148,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
-    color: #fff;
-    background-color: #E0D627;
+    border-color: #fff;
+    color: #FE5D63;
+    background-color: #fff;
 }
 
 .btn-xl:active,
@@ -175,6 +183,36 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+#rows .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#rows .dkgray {
+  margin-right: -15px;
+  margin-left: -15px;
+  background-color: #FE5D63;
+}
+
+#rows .ltgray {
+  margin-right: -15px;
+  margin-left: -15px;
+  background-color: #CCC3BE;
+}
+
+#rows .tan {
+  margin-right: -15px;
+  margin-left: -15px;
+  background-color: #E8AE88;
+}
+
+#rows .pink {
+  margin-right: -15px;
+  margin-left: -15px;
+  background-color: #FE5D63;
+}
+
+
 .navbar-default {
     border-color: transparent;
     background-color: #665E5B;
@@ -182,10 +220,13 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #E0D627;
+    color: #665E5B;
 }
 
-.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:hover {
+        color: #665E5B;
+
+}
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
@@ -257,13 +298,15 @@ fieldset[disabled] .btn-xl.active {
         border-radius: 3px;
     }
 
-    .navbar-default.navbar-shrink {
+    .navbar-default.navbar-shrink { 
         padding: 10px 0;
         background-color: #665E5B;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        color: #fff;
+        transition: ease 1s;
     }
 }
 
@@ -271,7 +314,7 @@ header {
     text-align: left;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/icecream_png.png);
+    background-image: none;
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -291,6 +334,7 @@ header .intro-text .intro-lead-in {
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
+    color: #FE5D63;
 }
 
 header .intro-text .intro-heading {
@@ -300,16 +344,17 @@ header .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+    color: #CCC3BE;
 }
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        padding-top: 100px;
+        padding-bottom: 10px;
     }
 
     header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
+        margin-bottom: 50px;
         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
         font-style: italic;
@@ -317,7 +362,7 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 75px;
@@ -332,7 +377,7 @@ section {
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     font-size: 40px;
 }
 
@@ -611,7 +656,7 @@ section h3.section-subheading {
 
 @media(min-width:1200px) {
     .timeline>li {
-        min-height: 170px;
+        min-height: 70px;
     }
 
     .timeline>li .timeline-panel {
@@ -634,7 +679,7 @@ section h3.section-subheading {
 }
 
 .team-member {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -644,18 +689,32 @@ section h3.section-subheading {
 }
 
 .team-member h4 {
-    margin-top: 25px;
-    /* color: #FE5D63; */
-    margin-bottom: 0;
+    margin-top: 10px;
+    color: #FE5D63;
+    margin-bottom: 5px;
     text-transform: none;
 }
 
+.team-member h2 {
+    color: #fff;
+    background-color: #FE5D63;
+    width: 308px;
+}
+
 .team-member p {
-    margin-top: 0;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 aside.clients img {
     margin: 50px auto;
+}
+
+section#about {
+    background-color: #fff;
+    background-image: url(../img/icecream_png.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 section#contact {
@@ -744,7 +803,7 @@ footer ul.quicklinks {
 }
 
 ul.social-buttons {
-    margin-bottom: 10;
+    margin-top: 25 px;
 }
 
 ul.social-buttons li a {
