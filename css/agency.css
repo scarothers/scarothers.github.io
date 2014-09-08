@@ -354,7 +354,7 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-lead-in {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
         font-style: italic;
@@ -696,14 +696,13 @@ section h3.section-subheading {
 }
 
 .team-member h2 {
-    color: #fff;
-    background-color: #FE5D63;
-    width: 308px;
+    /* color: #fff; */
+    /* background-color: #FE5D63; */
 }
 
 .team-member p {
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 aside.clients img {
@@ -726,6 +725,10 @@ section#contact {
 
 section#contact .section-heading {
     color: #fff;
+}
+
+section#about .section-heading {
+    color: #FE5D63;
 }
 
 section#contact .form-group {

@@ -65,8 +65,12 @@ h1 {
   font-size: 2em;
 }
 mark {
-  color: #000;
-  background: #ff0;
+  color: #FE5D63;
+  background: #fff;
+}
+.mark-inverse{
+  color: #fff;
+  background: #FE5D63;
 }
 small {
   font-size: 80%;
@@ -1124,7 +1128,7 @@ cite {
 mark,
 .mark {
   padding: .2em;
-  background-color: #fcf8e3;
+  background-color: #fff;
 }
 .text-left {
   text-align: left;
